@@ -1,76 +1,76 @@
-#ITU±ê×¼ÎÄµµX.680--ASN.1»ù±¾·ûºÅËµÃ÷#
-##Introduction ¼ò½é##
-##ĞÅÏ¢¼¼Êõ--ASN.1»ù±¾·ûºÅËµÃ÷##
-###Scope ·¶Î§###
-ÕâÆª±ê×¼Ìá¹©ÁËÒ»ÖÖ½Ğ×ö³éÏóÓï·¨·ûºÅ--(ASN.1)µÄ·ûºÅÃèÊö¡£ÕâÖÖ·ûºÅÃèÊö¿ÉÒÔÓÃÀ´¶¨ÒåÊı¾İÀàĞÍ,ÖµÒÔ¼°Êı¾İÀàĞÍµÄÔ¼Êø¡£
+#ITUæ ‡å‡†æ–‡æ¡£X.680--ASN.1åŸºæœ¬ç¬¦å·è¯´æ˜#
+##Introduction ç®€ä»‹##
+##ä¿¡æ¯æŠ€æœ¯--ASN.1åŸºæœ¬ç¬¦å·è¯´æ˜##
+###Scope èŒƒå›´###
+è¿™ç¯‡æ ‡å‡†æä¾›äº†ä¸€ç§å«åšæŠ½è±¡è¯­æ³•ç¬¦å·--(ASN.1)çš„ç¬¦å·æè¿°ã€‚è¿™ç§ç¬¦å·æè¿°å¯ä»¥ç”¨æ¥å®šä¹‰æ•°æ®ç±»å‹,å€¼ä»¥åŠæ•°æ®ç±»å‹çš„çº¦æŸã€‚
 
-ÕâÆª±ê×¼:
-* ¶¨ÒåÁËÒ»ÏµÁĞ¼òµ¥ÀàĞÍ¡£²¢¶¨ÒåÁËÕâĞ©¼òµ¥ÀàĞÍµÄÃû³Æ£¬ÒıÓÃÕâĞ©¼òµ¥ÀàĞÍµÄ¼ÇºÅºÍÕâĞ©¼òµ¥ÀàĞÍµÄÈ¡Öµ¡£
-* ¶¨ÒåÁËÒ»ÖÖ´Ó¼òµ¥ÀàĞÍÖĞ¹¹ÔìĞÂÀàĞÍµÄ»úÖÆ¡£Ö¸¶¨ÁË¹¹ÔìµÄÀàĞÍ£¬¶¨ÒåĞÂÀàĞÍÃû³Æ£¬¶ÔĞÂÀàĞÍÉèÖÃÈ¡Öµ·¶Î§µÄÓï·¨¼ÇºÅ¡£
-* ¶¨ÒåÁËÔÚASN.1ÖĞÊ¹ÓÃµÄ×Ö·û¼¯(ÒıÓÃÁËÆäËû±ê×¼)¡£
+è¿™ç¯‡æ ‡å‡†:
+* å®šä¹‰äº†ä¸€ç³»åˆ—ç®€å•ç±»å‹ã€‚å¹¶å®šä¹‰äº†è¿™äº›ç®€å•ç±»å‹çš„åç§°ï¼Œå¼•ç”¨è¿™äº›ç®€å•ç±»å‹çš„è®°å·å’Œè¿™äº›ç®€å•ç±»å‹çš„å–å€¼ã€‚
+* å®šä¹‰äº†ä¸€ç§ä»ç®€å•ç±»å‹ä¸­æ„é€ æ–°ç±»å‹çš„æœºåˆ¶ã€‚æŒ‡å®šäº†æ„é€ çš„ç±»å‹ï¼Œå®šä¹‰æ–°ç±»å‹åç§°ï¼Œå¯¹æ–°ç±»å‹è®¾ç½®å–å€¼èŒƒå›´çš„è¯­æ³•è®°å·ã€‚
+* å®šä¹‰äº†åœ¨ASN.1ä¸­ä½¿ç”¨çš„å­—ç¬¦é›†(å¼•ç”¨äº†å…¶ä»–æ ‡å‡†)ã€‚
 
-ASN.1·ûºÅ¿ÉÒÔÓÃÔÚÈÎºÎĞèÒª¶¨ÒåĞÅÏ¢µÄ³éÏóÓï·¨µÄµØ·½¡£
-ASN.1·ûºÅ±»¶¨ÒåASN.1ÀàĞÍµÄ±àÂë¹æ·¶µÄÆäËû±ê×¼ÒıÓÃ.
-###Normative references ¹æ·¶µÄÒıÓÃ###
-ÏÂÃæµÄÕâĞ©¹ú¼Ê±ê×¼°üº¬ÁËÒ»Ğ©¹¹³É±¾¹ú¼Ê±£×¼µÄÌõ¿îÎÄ±¾µÄÒ»Ğ©Ìõ¿î.·¢²¼µÄÊ±ºò,ËùÓĞµÄ°æ±¾¶¼ÊÇ¿ÉÓÃµÄ.ËùÓĞµÄ¹ú¼Ê±ê×¼¶¼»á×ö³öĞŞ¶©,ÔÚ±¾Ğ­Òé»ù´¡ÉÏ´ï³É¹²Í¬Òâ¼ûµÄ¸÷·½½«¾¡¿ÉÄÜÁĞ³öÏÂÃæ¹ú¼Ê±ê×¼µÄ×îĞÂ°æ±¾.ISOºÍIECµÄ³ÉÔ±Î¬»¤µ±Ç°µÄ¿ÉÓÃµÄ¹ú¼Ê±ê×¼°æ±¾,ITUµÄµçĞÅ±ê×¼»¯¾ÖÎ¬»¤µ±Ç°¿ÉÓÃµÄITU-T½¨Òé°æ±¾.
+ASN.1ç¬¦å·å¯ä»¥ç”¨åœ¨ä»»ä½•éœ€è¦å®šä¹‰ä¿¡æ¯çš„æŠ½è±¡è¯­æ³•çš„åœ°æ–¹ã€‚
+ASN.1ç¬¦å·è¢«å®šä¹‰ASN.1ç±»å‹çš„ç¼–ç è§„èŒƒçš„å…¶ä»–æ ‡å‡†å¼•ç”¨.
+###Normative references è§„èŒƒçš„å¼•ç”¨###
+ä¸‹é¢çš„è¿™äº›å›½é™…æ ‡å‡†åŒ…å«äº†ä¸€äº›æ„æˆæœ¬å›½é™…ä¿å‡†çš„æ¡æ¬¾æ–‡æœ¬çš„ä¸€äº›æ¡æ¬¾.å‘å¸ƒçš„æ—¶å€™,æ‰€æœ‰çš„ç‰ˆæœ¬éƒ½æ˜¯å¯ç”¨çš„.æ‰€æœ‰çš„å›½é™…æ ‡å‡†éƒ½ä¼šåšå‡ºä¿®è®¢,åœ¨æœ¬åè®®åŸºç¡€ä¸Šè¾¾æˆå…±åŒæ„è§çš„å„æ–¹å°†å°½å¯èƒ½åˆ—å‡ºä¸‹é¢å›½é™…æ ‡å‡†çš„æœ€æ–°ç‰ˆæœ¬.ISOå’ŒIECçš„æˆå‘˜ç»´æŠ¤å½“å‰çš„å¯ç”¨çš„å›½é™…æ ‡å‡†ç‰ˆæœ¬,ITUçš„ç”µä¿¡æ ‡å‡†åŒ–å±€ç»´æŠ¤å½“å‰å¯ç”¨çš„ITU-Tå»ºè®®ç‰ˆæœ¬.
 
 ####Identical Recommendations | International Standards ####
-* CCITT Recommendation X.660 (1992) | ISO/IEC 9834-1:1993, Information technology ¨C Open Systems Interconnection ¨C Procedures for the operation of OSI Registration Authorities: General procedures: (plus amendments).
-* ITU-T Recommendation X.681 (2002) | ISO/IEC 8824-2:2002, Information technology ¨C Abstract Syntax Notation One (ASN.1): Information object specification.
-* ITU-T Recommendation X.682 (2002) | ISO/IEC 8824-3:2002, Information technology ¨C Abstract Syntax Notation One (ASN.1): Constraint specification.
-* ITU-T Recommendation X.683 (2002) | ISO/IEC 8824-4:2002, Information technology ¨C Abstract Syntax Notation One (ASN.1): Parameterization of ASN.1 specifications.
-* ITU-T Recommendation X.690 (2002) | ISO/IEC 8825-1:2002, Information technology ¨C ASN.1 encoding Rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER).
-* ITU-T Recommendation X.691 (2002) | ISO/IEC 8825-2:2002, Information technology ¨C ASN.1 encoding rules: Specification of Packed Encoding Rules (PER).
-* ITU-T Recommendation X.692 (2002) | ISO/IEC 8825-3:2002, Information technology ¨C ASN.1 encoding rules: Specification of Encoding Control Notation (ECN).
-* ITU-T Recommendation X.693 (2001) | ISO/IEC 8825-4:2002, Information technology ¨C ASN.1 encoding rules: XML Encoding Rules (XER).
+* CCITT Recommendation X.660 (1992) | ISO/IEC 9834-1:1993, Information technology â€“ Open Systems Interconnection â€“ Procedures for the operation of OSI Registration Authorities: General procedures: (plus amendments).
+* ITU-T Recommendation X.681 (2002) | ISO/IEC 8824-2:2002, Information technology â€“ Abstract Syntax Notation One (ASN.1): Information object specification.
+* ITU-T Recommendation X.682 (2002) | ISO/IEC 8824-3:2002, Information technology â€“ Abstract Syntax Notation One (ASN.1): Constraint specification.
+* ITU-T Recommendation X.683 (2002) | ISO/IEC 8824-4:2002, Information technology â€“ Abstract Syntax Notation One (ASN.1): Parameterization of ASN.1 specifications.
+* ITU-T Recommendation X.690 (2002) | ISO/IEC 8825-1:2002, Information technology â€“ ASN.1 encoding Rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER).
+* ITU-T Recommendation X.691 (2002) | ISO/IEC 8825-2:2002, Information technology â€“ ASN.1 encoding rules: Specification of Packed Encoding Rules (PER).
+* ITU-T Recommendation X.692 (2002) | ISO/IEC 8825-3:2002, Information technology â€“ ASN.1 encoding rules: Specification of Encoding Control Notation (ECN).
+* ITU-T Recommendation X.693 (2001) | ISO/IEC 8825-4:2002, Information technology â€“ ASN.1 encoding rules: XML Encoding Rules (XER).
 
 #### Additional references####
 * ITU-R Recommendation TF.460-5 (1997), Standard-frequency and time-signal emissions.
 * CCITT Recommendation T.100 (1988), International information exchange for interactive videotex.
 * ITU-T Recommendation T.101 (1994), International interworking for videotex services.
 * ISO International Register of Coded Character Sets to be used with Escape Sequences.
-* ISO/IEC 646:1991, Information technology ¨C ISO 7-bit coded character set for information interchange.
-* ISO/IEC 2022:1994, Information technology ¨C Character code structure and extension techniques.
-* ISO/IEC 6523:1998, Data interchange ¨C Structures for the identification of organizations.
-* ISO/IEC 7350:1991, Information technology ¨C Registration of repertoires of graphic characters from ISO/IEC 10367.
-* ISO 8601:2000, Data elements and interchange formats ¨C Information interchange ¨C Representation of dates and times.
-* ISO/IEC 10646-1:2000, Information technology ¨C Universal Multiple-Octet Coded Character Set (UCS) ¨C Part 1: Architecture and Basic Multilingual Plane.
+* ISO/IEC 646:1991, Information technology â€“ ISO 7-bit coded character set for information interchange.
+* ISO/IEC 2022:1994, Information technology â€“ Character code structure and extension techniques.
+* ISO/IEC 6523:1998, Data interchange â€“ Structures for the identification of organizations.
+* ISO/IEC 7350:1991, Information technology â€“ Registration of repertoires of graphic characters from ISO/IEC 10367.
+* ISO 8601:2000, Data elements and interchange formats â€“ Information interchange â€“ Representation of dates and times.
+* ISO/IEC 10646-1:2000, Information technology â€“ Universal Multiple-Octet Coded Character Set (UCS) â€“ Part 1: Architecture and Basic Multilingual Plane.
 * The Unicode Standard, Version 3.2.0:2002. The Unicode Consortium. (Reading, MA, Addison-Wesley)
-NOTE 1 ¨C The above reference is included because it provides names for control characters.
+NOTE 1 â€“ The above reference is included because it provides names for control characters.
 * W3C XML 1.0:2000, Extensible Markup Language (XML) 1.0 (Second Edition), W3C Recommendation, Copyright c [6 October 2000] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University), http://www.w3.org/TR/2000/REC-xml-20001006.
-NOTE 2 ¨C The reference to a document within this Recommendation | International Standard does not give it, as a stand-alone document, the status of a Recommendation or International Standard.
+NOTE 2 â€“ The reference to a document within this Recommendation | International Standard does not give it, as a stand-alone document, the status of a Recommendation or International Standard.
 
-###Definitions ¶¨Òå###
-ÓÉÓÚ¸Ã±ê×¼µÄÓÃÍ¾£¬ÈçÏÂ¶¨Òå±»Ê¹ÓÃ¡£
+###Definitions å®šä¹‰###
+ç”±äºè¯¥æ ‡å‡†çš„ç”¨é€”ï¼Œå¦‚ä¸‹å®šä¹‰è¢«ä½¿ç”¨ã€‚
 
-####Information object specification ĞÅÏ¢¶ÔÏóËµÃ÷####
-ÕâÆª¹ú¼Ê±ê×¼Ê¹ÓÃÁË¶¨ÒåÔÚITU-T Rec. X.681 | ISO/IEC 8824-2ÖĞµÄÊõÓï¡£
-* information object;(ĞÅÏ¢¶ÔÏó)
-* information object class;(ĞÅÏ¢¶ÔÏóÀà)
-* information object set;(ĞÅÏ¢¶ÔÏó¼¯ºÏ)
-* instance-of type;(ÊµÀı»¯ÀàĞÍ)
-* object class field type.(¶ÔÏóÀàÓòÀàĞÍ)
+####Information object specification ä¿¡æ¯å¯¹è±¡è¯´æ˜####
+è¿™ç¯‡å›½é™…æ ‡å‡†ä½¿ç”¨äº†å®šä¹‰åœ¨ITU-T Rec. X.681 | ISO/IEC 8824-2ä¸­çš„æœ¯è¯­ã€‚
+* information object;(ä¿¡æ¯å¯¹è±¡)
+* information object class;(ä¿¡æ¯å¯¹è±¡ç±»)
+* information object set;(ä¿¡æ¯å¯¹è±¡é›†åˆ)
+* instance-of type;(å®ä¾‹åŒ–ç±»å‹)
+* object class field type.(å¯¹è±¡ç±»åŸŸç±»å‹)
 
-####Constraint specification Ô¼ÊøËµÃ÷
+####Constraint specification çº¦æŸè¯´æ˜
 
-ÕâÆª¹ú¼Ê±ê×¼ÖĞÊ¹ÓÃÁË¶¨ÒåÔÚITU-T Rec. X.682 | ISO/IEC 8824-3ÖĞµÄÊõÓï:
-* component relation constraint;(×é¼ş¹ØÁªÔ¼Êø)
-* table constraint.(±íÔ¼Êø)
+è¿™ç¯‡å›½é™…æ ‡å‡†ä¸­ä½¿ç”¨äº†å®šä¹‰åœ¨ITU-T Rec. X.682 | ISO/IEC 8824-3ä¸­çš„æœ¯è¯­:
+* component relation constraint;(ç»„ä»¶å…³è”çº¦æŸ)
+* table constraint.(è¡¨çº¦æŸ)
 
-####Parameterization of ASN.1 specification ASN.1µÄµÄ²ÎÊıËµÃ÷
+####Parameterization of ASN.1 specification ASN.1çš„çš„å‚æ•°è¯´æ˜
 
-ÕâÆª¹ú¼Ê±ê×¼ÖĞÊ¹ÓÃÁË¶¨ÒåÔÚITU-T Rec. X.683 | ISO/IEC 8824-4ÖĞµÄÊõÓï:
-* parameterized type;(²ÎÊı»¯ÀàĞÍ)
-* parameterized value.(²ÎÊı»¯Öµ)
+è¿™ç¯‡å›½é™…æ ‡å‡†ä¸­ä½¿ç”¨äº†å®šä¹‰åœ¨ITU-T Rec. X.683 | ISO/IEC 8824-4ä¸­çš„æœ¯è¯­:
+* parameterized type;(å‚æ•°åŒ–ç±»å‹)
+* parameterized value.(å‚æ•°åŒ–å€¼)
 
-####Structure for identification of organizations ×éÖ¯±êÊ¶½á¹¹
-ÕâÆª¹ú¼Ê±ê×¼ÖĞÊ¹ÓÃÁË¶¨ÒåÔÚISO/IEC 6523ÖĞµÄÊõÓï:
+####Structure for identification of organizations ç»„ç»‡æ ‡è¯†ç»“æ„
+è¿™ç¯‡å›½é™…æ ‡å‡†ä¸­ä½¿ç”¨äº†å®šä¹‰åœ¨ISO/IEC 6523ä¸­çš„æœ¯è¯­:
 * issuing organization;
 * organization code;
 * International Code Designator.
 
-####Universal Multiple-Octet Coded Character Set (UCS) Í¨ÓÃ¶à×Ö½Ú×Ö·û¼¯
-ÕâÆª¹ú¼Ê±ê×¼ÖĞÊ¹ÓÃÁË¶¨ÒåÔÚISO/IEC 10646-1ÖĞµÄÊõÓï:
+####Universal Multiple-Octet Coded Character Set (UCS) é€šç”¨å¤šå­—èŠ‚å­—ç¬¦é›†
+è¿™ç¯‡å›½é™…æ ‡å‡†ä¸­ä½¿ç”¨äº†å®šä¹‰åœ¨ISO/IEC 10646-1ä¸­çš„æœ¯è¯­:
 * Basic Multilingual Plane (BMP);
 * cell;
 * combining character;
@@ -81,27 +81,27 @@ NOTE 2 ¨C The reference to a document within this Recommendation | International
 * row;
 * selected subset.
 
-####¸½¼ÓµÄ¶¨Òå
-##### abstract character ³éÏó×Ö·û
-³éÏó×Ö·ûÊÇÓÃÀ´×éÖ¯£¬¿ØÖÆºÍ±íÊ¾ÎÄ±¾Êı¾İµÄ¡£
+####é™„åŠ çš„å®šä¹‰
+##### abstract character æŠ½è±¡å­—ç¬¦
+æŠ½è±¡å­—ç¬¦æ˜¯ç”¨æ¥ç»„ç»‡ï¼Œæ§åˆ¶å’Œè¡¨ç¤ºæ–‡æœ¬æ•°æ®çš„ã€‚
 
-*NOTE*-[¸½Â¼F](#¸½Â¼F)Ìá¹©ÁË¹ØÓÚ³éÏó×Ö·ûµÄ¸üÍêÕûµÄÃèÊö.
+*NOTE*-[é™„å½•F](#é™„å½•F)æä¾›äº†å…³äºæŠ½è±¡å­—ç¬¦çš„æ›´å®Œæ•´çš„æè¿°.
 
-##### abstract value ³éÏóÖµ
-Ò»¸öÖµ£¬Õâ¸öÖµµÄ¶¨Òå½ö½ö»ùÓÚÓÃÓÚ±í´ïÓïÒåµÄÀàĞÍ£¬ÓëËüÔÚÈÎºÎ±àÂëÖĞÈçºÎ±í´ïÎŞ¹Ø¡£
+##### abstract value æŠ½è±¡å€¼
+ä¸€ä¸ªå€¼ï¼Œè¿™ä¸ªå€¼çš„å®šä¹‰ä»…ä»…åŸºäºç”¨äºè¡¨è¾¾è¯­ä¹‰çš„ç±»å‹ï¼Œä¸å®ƒåœ¨ä»»ä½•ç¼–ç ä¸­å¦‚ä½•è¡¨è¾¾æ— å…³ã€‚
 
-*NOTE*-³éÏóÖµµÄÀı×ÓÊÇÕûĞÍ,²¼¶ûĞÍ,×Ö·û´®ÀàĞÍ»òÕßÊÇÕûĞÍ¡¢²¼¶ûĞÍµÄĞòÁĞ(»òºòÑ¡)µÄÖµ.
+*NOTE*-æŠ½è±¡å€¼çš„ä¾‹å­æ˜¯æ•´å‹,å¸ƒå°”å‹,å­—ç¬¦ä¸²ç±»å‹æˆ–è€…æ˜¯æ•´å‹ã€å¸ƒå°”å‹çš„åºåˆ—(æˆ–å€™é€‰)çš„å€¼.
 
-####ASN.1 character set ASN.1×Ö·û¼¯
-[µÚÊ®Ìõ](#TODO_ÌîÈëµÚÊ®ÌõµØÖ·)ÖĞÃèÊöµÄÓÃÔÚASN.1·ûºÅÖĞµÄ×Ö·ûµÄ¼¯ºÏ.
+####ASN.1 character set ASN.1å­—ç¬¦é›†
+[ç¬¬åæ¡](#TODO_å¡«å…¥ç¬¬åæ¡åœ°å€)ä¸­æè¿°çš„ç”¨åœ¨ASN.1ç¬¦å·ä¸­çš„å­—ç¬¦çš„é›†åˆ.
 
-####ASN.1 specification ASN.1ËµÃ÷
-Ò»¸ö»ò¶à¸öASN.1Ä£¿éµÄ¼¯ºÏ¡£
+####ASN.1 specification ASN.1è¯´æ˜
+ä¸€ä¸ªæˆ–å¤šä¸ªASN.1æ¨¡å—çš„é›†åˆã€‚
 
-####associated type ¹ØÁªÀàĞÍ
-¹ØÁªÀàĞÍÊÇÒ»¸ö½ö½öÓÃÓÚ¶¨ÒåÖµ»ò¶¨ÒåÒ»ÖÖÀàĞÍµÄ×ÓÀàĞÍ·ûºÅ¡£
+####associated type å…³è”ç±»å‹
+å…³è”ç±»å‹æ˜¯ä¸€ä¸ªä»…ä»…ç”¨äºå®šä¹‰å€¼æˆ–å®šä¹‰ä¸€ç§ç±»å‹çš„å­ç±»å‹ç¬¦å·ã€‚
 
-*NOTE*-<span stype="color:red">¹ØÁªÀàĞÍÔÚ±¾±ê×¼ÖĞ¶¨Òå£¬½ö½öÊÇÒòÎª±ØĞëËµÃ÷ASN.1ÖĞÀàĞÍµÄ¶¨ÒåÓë±àÂëÖ®¼äµÄÏÔÖø²î±ğ¡£¹ØÁªÀàĞÍµÄ¶¨Òå²¢Î´³öÏÖÔÚÓÃ»§ËµÃ÷ÖĞ¡£</span>
+*NOTE*-<span stype="color:red">å…³è”ç±»å‹åœ¨æœ¬æ ‡å‡†ä¸­å®šä¹‰ï¼Œä»…ä»…æ˜¯å› ä¸ºå¿…é¡»è¯´æ˜ASN.1ä¸­ç±»å‹çš„å®šä¹‰ä¸ç¼–ç ä¹‹é—´çš„æ˜¾è‘—å·®åˆ«ã€‚å…³è”ç±»å‹çš„å®šä¹‰å¹¶æœªå‡ºç°åœ¨ç”¨æˆ·è¯´æ˜ä¸­ã€‚</span>
 
 
-##¸½Â¼F##
+##é™„å½•F##
