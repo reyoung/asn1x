@@ -82,10 +82,26 @@ NOTE 2 – The reference to a document within this Recommendation | International
 * selected subset.
 
 ####附加的定义
-##### abstract character 抽象值
-抽象值是用来组织，控制和表示文本数据的。
+##### abstract character 抽象字符
+抽象字符是用来组织，控制和表示文本数据的。
 
 *NOTE*-[附录F](#附录F)提供了关于抽象字符的更完整的描述.
+
+##### abstract value 抽象值
+一个值，这个值的定义仅仅基于用于表达语义的类型，与它在任何编码中如何表达无关。
+
+*NOTE*-抽象值的例子是整型,布尔型,字符串类型或者是整型、布尔型的序列(或候选)的值.
+
+####ASN.1 character set ASN.1字符集
+[第十条](#TODO_填入第十条地址)中描述的用在ASN.1符号中的字符的集合.
+
+####ASN.1 specification ASN.1说明
+一个或多个ASN.1模块的集合。
+
+####associated type 关联类型
+关联类型是一个仅仅用于定义值或定义一种类型的子类型符号。
+
+*NOTE*-<span stype="color:red">关联类型在本标准中定义，仅仅是因为必须说明ASN.1中类型的定义与编码之间的显著差别。关联类型的定义并未出现在用户说明中。</span>
 
 
 ##附录F##
