@@ -23,6 +23,7 @@ ASN.1符号被定义ASN.1类型的编码规范的其他标准引用.
 * ITU-T Recommendation X.691 (2002) | ISO/IEC 8825-2:2002, Information technology – ASN.1 encoding rules: Specification of Packed Encoding Rules (PER).
 * ITU-T Recommendation X.692 (2002) | ISO/IEC 8825-3:2002, Information technology – ASN.1 encoding rules: Specification of Encoding Control Notation (ECN).
 * ITU-T Recommendation X.693 (2001) | ISO/IEC 8825-4:2002, Information technology – ASN.1 encoding rules: XML Encoding Rules (XER).
+
 #### Additional references####
 * ITU-R Recommendation TF.460-5 (1997), Standard-frequency and time-signal emissions.
 * CCITT Recommendation T.100 (1988), International information exchange for interactive videotex.
@@ -40,4 +41,15 @@ NOTE 1 – The above reference is included because it provides names for control 
 NOTE 2 – The reference to a document within this Recommendation | International Standard does not give it, as a stand-alone document, the status of a Recommendation or International Standard.
 
 ###Definitions 定义###
-由于该标准的目的，如下定义被使用。
+由于该标准的用途，如下定义被使用。
+
+####Information object specification 信息对象说明####
+这篇国际标准使用了定义在ITU-T Rec. X.681 | ISO/IEC 8824-2中的术语。
+* information object;(信息对象)
+* information object class;(信息对象类)
+* information object set;(信息对象集合)
+* instance-of type;(实例化类型)
+* object class field type.(对象类域类型)
+
+####Constraint specification 约束说明
+
