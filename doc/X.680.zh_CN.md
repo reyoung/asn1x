@@ -101,7 +101,40 @@ NOTE 2 – The reference to a document within this Recommendation | Internationa
 ####associated type 关联类型
 关联类型是一个仅仅用于定义值或定义一种类型的子类型符号。
 
-*NOTE*-<span stype="color:red">关联类型在本标准中定义，仅仅是因为必须说明ASN.1中类型的定义与编码之间的显著差别。关联类型的定义并未出现在用户说明中。</span>
+*NOTE*-`关联类型在本标准中定义，仅仅是因为必须说明ASN.1中类型的定义与编码之间的显著差别。关联类型的定义并未出现在用户说明中。`
+
+####bitstring type 位串类型
+一个表示0至多个位序列的简单类型
+
+*NOTE*-使用没有内容约束的bitstring(或者octetstring)类型的值来携带嵌入式的抽象值编码的方法已经废弃了.相反的使用embedded-pdv类型提供的机制更灵活,这种类型允许声明嵌入式抽象值的抽象语法和编码规则.
+
+####boolean type 布尔型
+有两种不同值的简单类型
+
+####character property 字符属性
+与定义字符指令表中的每一项相关联的信息集合。
+
+*NOTE*-这些信息通常会包含下面的部分或全部项目:
+
+* 图形符号
+* 字符名
+* 与在特殊环境下使用的字符相关联的函数定义 
+* 是否代表一个数字
+* 在(大写/小写)情况下与之相关的不同的字符
+
+####character abstract syntax 字符抽象语法
+任何使用一系列特定字符集而组成的特定字符串(0，1，或更多字符)而形成的语法
+
+####character repertoire 字符指令集
+在字符集合中那些与编码独立的字符
+
+####character string types 字符串类型
+一种使用某特定字符集中形成一串字符的简单类型。
+
+####character transfer syntax 字符传输语法
+任何字符抽象语法的传输语法
+
+*NOTE*-ASN.1不支持那些不把所有的字符串编码成为8位的整数倍的字符传输语法.
 
 
 ##附录F##
